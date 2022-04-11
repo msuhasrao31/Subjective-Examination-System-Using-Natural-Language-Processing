@@ -1,0 +1,57 @@
+{% extends 'userbase.html' %}
+{% load static %}
+
+{% block contents %}
+<section id="home" data-stellar-background-ratio="0.5">
+          <div class="overlay"></div>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-offset-3 col-md-6 col-sm-12">
+                         <div class="home-info">
+                              <h1 style="color:white">Test </h1>
+                            <form action="/usersanswers/" method="POST">
+    {% csrf_token%}<center>
+
+
+                                  <tr style="color:black">
+
+                                    <h2 style="color:red"><input type="text" name ="subject" value="{{object.subject}}" readonly></h2>
+                                      <h2 style="color:red">1)<input type="text" name ="question1" value="{{object.question1}}" readonly></h2>
+                                     <textarea rows="6" cols="50" name="answer1"></textarea>
+                                      <h2 style="color:red">2)<input type="text" name ="question2" value="{{object.question2}}" readonly></h2>
+                                      <textarea rows="6" cols="50" name="answer2"></textarea>
+                                    <h2 style="color:red">3)<input type="text" name ="question3" value="{{object.question3}}" readonly></h2>
+                                      <textarea rows="6" cols="50" name="answer3"></textarea>
+                                    <h2 style="color:red">4)<input type="text" name ="question4" value="{{object.question4}}" readonly></h2>
+                                      <textarea rows="6" cols="50" name="answer4"></textarea>
+                                   <h2 style="color:red">5)<input type="text" name ="question5" value="{{object.question5}}" readonly></h2>
+                                      <textarea rows="6" cols="50" name="answer5"></textarea>
+                                    <h2 style="color:red">6)<input type="text" name ="question6" value="{{object.question6}}" readonly></h2>
+                                      <textarea rows="6" cols="50" name="answer6"></textarea>
+                                    <h2 style="color:red">7)<input type="text" name ="question7" value="{{object.question7}}" readonly></h2>
+                                      <textarea rows="6" cols="50" name="answer7"></textarea>
+                                    <h2 style="color:red">8)<input type="text" name ="question8" value="{{object.question8}}" readonly></h2>
+                                      <textarea rows="6" cols="50" name="answer8"></textarea>
+                                    <h2 style="color:red">9)<input type="text" name ="question9" value="{{object.question9}}" readonly></h2>
+                                      <textarea rows="6" cols="50" name="answer9"></textarea>
+                                   <h2 style="color:red">10)<input type="text" name ="question10" value="{{object.question10}}" readonly></h2>
+                                      <textarea rows="6" cols="50" name="answer10"></textarea>
+
+
+                                   </tr> <br><br>   <input type="submit" style="color:#FF4500" value="submit">
+
+
+                                </table></center></form>
+
+
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+
+{% endblock %}

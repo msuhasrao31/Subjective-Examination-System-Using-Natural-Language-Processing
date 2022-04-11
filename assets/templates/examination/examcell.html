@@ -1,0 +1,44 @@
+{% extends 'examinationbase.html' %}
+{% load static %}
+
+{% block contents %}
+<section id="home" data-stellar-background-ratio="0.5">
+          <div class="overlay"></div>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-offset-3 col-md-6 col-sm-12">
+                         <div class="home-info">
+<h1>EXAM QUESTIONS</h1>
+
+
+                            <form action="/questioncell/" method="POST">
+                                    {% csrf_token %}<center>
+                                   <h2> <table>
+                                          <tr><td style="color:white">subject</td><td >{{form.subject}}</td></tr>
+                                          <tr><td style="color:white"> question1</td><td >{{form.question1}}</td></tr>
+                            <tr><td style="color:white">question2</td><td>{{form.question2}}</td></tr>
+                                        <tr><td style="color:white">question3</td><td>{{form.question3}}</td></tr>
+                            <tr><td style="color:white">question4</td><td>{{form.question4}}</td></tr>
+                            <tr><td style="color:white">question5</td><td>{{form.question5}}</td></tr>
+                            <tr><td style="color:white">question6</td><td>{{form.question6}}</td></tr>
+                            <tr><td style="color:white">question7</td><td>{{form.question7}}</td></tr>
+                            <tr><td style="color:white">question8</td><td>{{form.question8}}</td></tr>
+                            <tr><td style="color:white">question9</td><td>{{form.question9}}</td></tr>
+                            <tr><td style="color:white">question10</td><td>{{form.question10}}</td></tr>
+
+                                    </table></h2>
+                                <input type="submit" value="submit">
+
+                            </center></form>
+
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+
+{% endblock %}

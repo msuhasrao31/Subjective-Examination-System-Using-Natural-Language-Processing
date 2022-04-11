@@ -1,0 +1,37 @@
+{% extends 'userbase.html' %}
+{% load static %}
+
+{% block contents %}
+<section id="home" data-stellar-background-ratio="0.5">
+          <div class="overlay"></div>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-offset-3 col-md-6 col-sm-12">
+                         <div class="home-info">
+                                <tr><th style="color:red">s.no</th>
+                                    <th style="color:red">Email</th>
+                                    <th style="color:red">Subject</th>
+                                    <th style="color:red">Marks</th>
+
+                                  </tr>
+
+                              {% for x in marks %}
+                                  <tr style="color:white">
+                                    <td>{{forloop.counter}}</td>
+                                    <td>{{x.email}}</td>
+                                    <td>{{x.subject}}</td>
+                                    <td>{{x.marks}}</td>
+                                     {% endfor %}
+
+                                  </tr>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+
+{% endblock %}

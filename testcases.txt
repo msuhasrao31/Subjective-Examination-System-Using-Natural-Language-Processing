@@ -1,0 +1,32 @@
+Object oriented Programming	
+What is Class	
+Define Object	
+Define forms of Inheritance	
+Explain Types of Inheritance	
+Why Multilevel Inheritance does not work in Java	
+What is Interface	
+What is Abstract Class	
+Define Access Specifiers	
+Define Final Keyword	Explain 
+Inline Functions
+
+
+class is a blueprint of object
+
+object is real world entity
+
+specialisation,specification,combination,extension
+
+single,multiple,multilevel,hybrid and hierarchial
+
+It causes ambiguity error
+
+interface is used to achieve multilevel inheritance
+
+Is a restricted class that cannot be used to create objects
+
+Final keyword to avoid inheritance and copy of variable and overriding of methods
+
+Public, private, protected, default
+
+It is used to reduce overhead of function

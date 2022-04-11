@@ -1,0 +1,57 @@
+{% extends 'adminbase.html' %}
+{% load static %}
+
+{% block contents %}
+<section id="home" data-stellar-background-ratio="0.5">
+          <div class="overlay"></div>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-offset-3 col-md-6 col-sm-12">
+                         <div class="home-info">
+                              <h1 style="color:white">View users details </h1>
+                            <center><table border="2px solid blue" align="center">
+                                  <tr><th style="color:red">First Name</th>
+                                    <th style="color:red">Last Name</th>
+                                    <th style="color:red">Email</th>
+                                    <th style="color:red">Password</th>
+                                    <th style="color:red">Mobile</th>
+                                    <th style="color:red">qualification</th>
+                                    <th style="color:red">City</th>
+                                    <th style="color:red">status</th>
+                                    <th style="color:red">activate</th>
+                                  </tr>
+
+                              {% for x in object %}
+                                  <tr style="color:white">
+                                    <td>{{x.firstname}}</td>
+                                    <td>{{x.lastname}}</td>
+                                    <td>{{x.email}}</td>
+                                    <td>{{x.passwd}}</td>
+                                    <td>{{x.mobileno}}</td>
+                                    <td>{{x.qualification}}</td>
+                                    <td>{{x.city}}</td>
+                                    <td>{{x.status}}</td>
+
+                                    {% if x.status == 'waiting' %}
+                                      <td> <a href="/activateuser/?pid={{ x.id }}" >Activate</a></td>
+                                    {% else %}
+                                            <td> Activated</td>
+                                            {% endif %}
+
+                                     </tr>
+                                    {% endfor %}
+
+                            </table></center>
+
+
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+
+{% endblock %}

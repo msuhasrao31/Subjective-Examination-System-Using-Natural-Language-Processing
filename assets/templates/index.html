@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contents %}
+<section id="home" data-stellar-background-ratio="0.5">
+          <div class="overlay"></div>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-offset-3 col-md-6 col-sm-12">
+                         <div class="home-info">
+                              <h1>An Examination System Automation Using Natural Language Processing</h1>
+
+                              <!--<form action="" method="get" class="online-form">
+                                   <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+                                   <button type="submit" class="form-control">Get started</button>
+                              </form>-->
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+<section id="feature" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title">
+                              <h1>Abstract</h1>
+                         </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+
+
+                         <div class="tab-content">
+                              <div class="tab-pane active" id="tab01" role="tabpanel">
+                                   <div class="tab-pane-item">
+                                        <h2></h2>
+                                        <p>This world has seen a lot many examination portals that are deployed over several servers which are used to conduct online examination for various purposes among which some may include conducting a test for entrance examinations, or olympiads at national and international level and while some portals are designed to conduct a test for placement purposes. But what we have seen is that mostly all the portals are designed to conduct tests that contain multiple choice questions. Here our aim is not to work on the technology that is already existing, rather some technology that is very rare. Here we talk of the descriptive online examination system. Multiple choice questions are easy to deal as they have a question, a few options and a field in the same question that stores the correct option in the database. While in the case of descriptive questions it is not so. It brings in or uses the concepts of Natural Language Processing or NLP to assign marks to answers. Answers are nothing but strings and the job of the model is to do some operations on the answer string such that it can assign the correct marks to answers written by the examinee. The data is basically collected from a descriptive online examination system. Further, it is analyzed and the designed model assigns accurate marks to the answers for the question. The back-end is written in Python where the web framework used is Django, the library used for Natural
+Language Processing includes NLTK and for database purpose, SQLite version 3 is used, while for the front-end HTML version-5, CSS version-3, Bootstrap and Javascript is used .</p>
+                                   </div>
+
+          </div>
+     </section>
+
+{% endblock %}

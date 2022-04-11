@@ -1,0 +1,59 @@
+{% extends 'adminbase.html' %}
+{% load static %}
+
+{% block contents %}
+<section id="home" data-stellar-background-ratio="0.5">
+          <div class="overlay"></div>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-offset-3 col-md-6 col-sm-12">
+                         <div class="home-info">
+                              <h1 style="color:white">View Examination users details </h1>
+                            <center><table border="2px solid blue" align="center">
+                                  <tr><th style="color:red">subject</th>
+                                  <th style="color:red">question1</th>
+                                    <th style="color:red">question2</th>
+                                    <th style="color:red">question3</th>
+                                    <th style="color:red">question4</th>
+                                    <th style="color:red">question5</th>
+                                    <th style="color:red">question6</th>
+                                    <th style="color:red">question7</th>
+                                    <th style="color:red">question8</th>
+                                    <th style="color:red">question9</th>
+                                    <th style="color:red">question10</th>
+                                  </tr>
+
+                              {% for x in object %}
+                                  <tr style="color:white">
+
+                                    <td>{{x.subject}}</td>
+                                    <td>{{x.question1}}</td>
+                                    <td>{{x.question2}}</td>
+                                    <td>{{x.question3}}</td>
+                                    <td>{{x.question4}}</td>
+                                    <td>{{x.question5}}</td>
+                                    <td>{{x.question6}}</td>
+                                    <td>{{x.question7}}</td>
+                                    <td>{{x.question8}}</td>
+                                    <td>{{x.question9}}</td>
+                                    <td>{{x.question10}}</td>
+
+
+
+                                     </tr>
+                                    {% endfor %}
+
+                            </table></center>
+
+
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+
+{% endblock %}

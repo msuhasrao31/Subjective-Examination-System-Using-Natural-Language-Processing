@@ -1,0 +1,44 @@
+{% extends 'examinationbase.html' %}
+{% load static %}
+
+{% block contents %}
+<section id="home" data-stellar-background-ratio="0.5">
+          <div class="overlay"></div>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-offset-3 col-md-6 col-sm-12">
+                         <div class="home-info">
+<h1>EXAM QUESTIONS</h1>
+
+
+                            <form action="/qanswers/" method="POST">
+                                    {% csrf_token %}<center>
+                                   <h2> <table>
+                                          <tr><td style="color:white">subject</td><td >{{form.subject}}</td></tr>
+                                          <tr><td style="color:white"> answer1</td><td >{{form.answer1}}</td></tr>
+                            <tr><td style="color:white">answer2</td><td>{{form.answer2}}</td></tr>
+                                        <tr><td style="color:white">answer3</td><td>{{form.answer3}}</td></tr>
+                            <tr><td style="color:white">answer4</td><td>{{form.answer4}}</td></tr>
+                            <tr><td style="color:white">answer5</td><td>{{form.answer5}}</td></tr>
+                            <tr><td style="color:white">answer6</td><td>{{form.answer6}}</td></tr>
+                            <tr><td style="color:white">answer7</td><td>{{form.answer7}}</td></tr>
+                            <tr><td style="color:white">answer8</td><td>{{form.answer8}}</td></tr>
+                            <tr><td style="color:white">answer9</td><td>{{form.answer9}}</td></tr>
+                            <tr><td style="color:white">answer10</td><td>{{form.answer10}}</td></tr>
+
+                                    </table></h2>
+                                <input type="submit" value="submit">
+
+                            </center></form>
+
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+
+{% endblock %}
