@@ -20,7 +20,7 @@ class user(models.Model):
 
 class examtest(models.Model):
     email = models.EmailField()
-    question = models.CharField(max_length=50,default="", editable=True)
+    question = models.CharField(max_length=500,default="", editable=True)
     answer = models.CharField(max_length=500,default="", editable=True)
 
 
@@ -31,7 +31,7 @@ class examtest(models.Model):
         db_table='examtest'
 
 class UserTestModel(models.Model):
-    subject = models.CharField(max_length=50, default="", editable=True)
+    subject = models.CharField(max_length=500, default="", editable=True)
     email = models.CharField(max_length=500, default="", editable=True, unique=True)
     question1 = models.CharField(max_length=500, default="", editable=True)
     answer1 = models.CharField(max_length=500, default="", editable=True)
@@ -60,7 +60,7 @@ class UserTestModel(models.Model):
         db_table="UserTestTable"
 
 class MarksModel(models.Model):
-    subject = models.CharField(max_length=50, default="", editable=True)
+    subject = models.CharField(max_length=500, default="", editable=True)
     email = models.CharField(max_length=500, default="", editable=True)
     marks = models.CharField(max_length=500, default="", editable=True)
 
