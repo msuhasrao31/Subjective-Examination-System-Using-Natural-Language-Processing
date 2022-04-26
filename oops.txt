@@ -1,4 +1,4 @@
-Object oriented Programming	
+oops
 What is Class	
 Define Object	
 Define forms of Inheritance	
@@ -7,8 +7,8 @@ Why Multilevel Inheritance does not work in Java
 What is Interface	
 What is Abstract Class	
 Define Access Specifiers	
-Define Final Keyword	Explain 
-Inline Functions
+Define Final Keyword	
+Explain Inline Functions
 
 
 class is a blueprint of object

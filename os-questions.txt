@@ -1,0 +1,36 @@
+1. Why is the operating system important?
+OS is the most essential and vital part of a computer without 
+which it is considered useless. 
+It enables an interface or acts 
+like a link for interaction between computer 
+software that is installed on OS and users.
+
+2. What's the main purpose of an OS? 
+The main purpose of an OS is to execute user programs and make it easier for users 
+to understand and interact with computers as well as run applications.
+
+3. What are the benefits of a multiprocessor system?
+A Multiprocessor system is a type of system that includes two or more CPUs. It involves the processing of different computer programs at the same time mostly by a computer system with two or more CPUs that are sharing single memory. 
+
+4. What is RAID structure in OS? 
+RAID (Redundant Arrays of Independent Disks) is a method used to store data on Multiple hard disks therefore it is considered as data storage virtualization technology that combines multiple hard disks
+
+5. What is GUI?
+GUI (Graphical User Interface) is basically a type of user interface that allows users to use graphics to interact with OS.
+
+6. What is a Pipe and when it is used?
+The pipe is generally a connection among two or more processes that are interrelated to each other. It is a mechanism that is used for inter-process communication using message passing. 
+
+7.What are the different kinds of operations that are possible on semaphore?
+There are basically two atomic operations that are possible
+Wait()
+Signal()
+
+8.What is a bootstrap program in OS?
+It is generally a program that initializes OS during startup i.e., first code that is executed whenever computer system startups. OS is loaded through a bootstrapping process or program commonly known as booting.
+
+9. Explain demand paging?
+Demand paging is a method that loads pages into memory on demand. This method is mostly used in virtual memory.
+
+10. What do you mean by RTOS?
+Real Time Operating System (RTOS) is an operating system that is used for real-time applications i.e., for those applications where data processing should be done in a fixed and small measure of time.

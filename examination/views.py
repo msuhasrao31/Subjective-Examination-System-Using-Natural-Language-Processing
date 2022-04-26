@@ -166,9 +166,9 @@ def examresult(request):
         print("count:",count)
         print("p1-len:",len(p1))
         if count == len(p1):
-            marks = (count/len(p1))*100
+            marks = (count/(len(p1)))*100
         elif count <= len(p1):
-            marks = (count/len(p1))*100
+            marks = (count/(len(p1)*4.5))*100
 
 
         result = MarksModel.objects.create(subject=subject,email=email,marks=marks)

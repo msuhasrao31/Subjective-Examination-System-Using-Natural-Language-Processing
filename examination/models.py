@@ -17,7 +17,7 @@ class examination(models.Model):
         db_table='examinationregister'
 
 class ExaminationQuestionModel(models.Model):
-    subject = models.CharField(max_length=50, default="", editable=True, unique=True)
+    subject = models.CharField(max_length=500, default="", editable=True, unique=True)
     question1 = models.CharField(max_length=500, default="", editable=True)
     question2 = models.CharField(max_length=500, default="", editable=True)
     question3 = models.CharField(max_length=500, default="", editable=True)
@@ -36,7 +36,7 @@ class ExaminationQuestionModel(models.Model):
 
 
 class ExaminationAnswerModel(models.Model):
-    subject = models.CharField(max_length=50, default="", editable=True, unique=True)
+    subject = models.CharField(max_length=500, default="", editable=True, unique=True)
     answer1 = models.CharField(max_length=500, default="", editable=True)
     answer2 = models.CharField(max_length=500, default="", editable=True)
     answer3 = models.CharField(max_length=500, default="", editable=True)
@@ -55,7 +55,7 @@ class ExaminationAnswerModel(models.Model):
 
 
 class questionsModel(models.Model):
-    subject = models.CharField(max_length=50, default="", editable=True, unique=True)
+    subject = models.CharField(max_length=500, default="", editable=True, unique=True)
     question1 = models.CharField(max_length=500, default="", editable=True)
     question2 = models.CharField(max_length=500, default="", editable=True)
     question3 = models.CharField(max_length=500, default="", editable=True)
